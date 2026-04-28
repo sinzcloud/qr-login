@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qr_login?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: root123
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto
+
+app:
+  jwt:
+    secret: "qr-login-demo-secret-key-change-this-in-production-2026"
+    expire-seconds: 86400
+  qr-login:
+    expire-seconds: 120
+#    pc-url: "http://192.168.0.104:5173/login"
+    mobile-confirm-url: "http://192.168.0.104:5173/mobile/qr-confirm"
