@@ -33,4 +33,4 @@ CREATE TABLE qr_login_record (
 
 -- password: 123456, BCrypt
 INSERT INTO sys_user(id, username, password, nickname, status, create_time, update_time)
-VALUES (1, 'admin', '$2a$10$qq1RfTBpbDeEIAj2.Tczz.aWyr7B6.U9.T8YpHIfbfMwgvZ70fGLu', '管理员', 1, NOW(), NOW());
+VALUES (1, 'admin', '$2a$10$BBVrJ/GhS5SoQ6asCjluV.WDK/Xyb1C6q7cbKIzl7mKywe.Nwbr2O', '管理员', 1, NOW(), NOW());
